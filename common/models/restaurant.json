@@ -16,17 +16,15 @@
       "type": "string"
     },
     "Restname": {
-      "type": "string",
+      "type": "string"
       
     },
     "Resttype": {
-      "type": "string",
-      
+      "type": "string"
     },
     "Deliversin": {
-      "type": "string",
-      
-    },
+      "type": "string"
+      },
     "Minorder": {
       "type": "string"
     },
