@@ -11,6 +11,70 @@
       "type": "string",
       "id": true,
       "required": true
+    },
+    "Thumbnail": {
+      "type": "string"
+    },
+    "Restname": {
+      "type": "string",
+      
+    },
+    "Resttype": {
+      "type": "string",
+      
+    },
+    "Deliversin": {
+      "type": "string",
+      
+    },
+    "Minorder": {
+      "type": "string"
+    },
+    "Deliveryfee": {
+      "type": "string"
+    },
+    "Openinghours": {
+      "type": "string"
+    },
+    "Deliveryradius": {
+      "type": "string"
+    },
+    "Ordercapacity": {
+      "type": "string"
+    },
+    "Adflag": {
+      "type": "boolean"
+    },
+    "Location": {
+      "type": "geopoint"
+    },
+    "Partybook": {
+      "type": "boolean"
+    },
+    "Paymentmethods": {
+      "type": [
+        "string"
+      ]
+    },
+    "Takeaway": {
+      "type": "boolean"
+    },
+    "Menu": {
+      "type": "object"
+    },
+    "Rating": {
+      "type": "string"
+    },
+    "freeDeliveryAmount":{
+      "type":"string"
+    },
+    "RestaurantStatus":{
+      "type":"string"
+    },
+    "orders": {
+      "type": [
+        "Fauxorder"
+      ]
     }
   },
   "validations": [],
