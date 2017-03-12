@@ -99,6 +99,20 @@
       "principalId": "$owner",
       "permission": "ALLOW",
       "property": "__updateById__fauxorders"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__restaurants"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__restaurant"
     }
   ],
   "methods": {}
