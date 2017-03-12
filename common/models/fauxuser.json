@@ -6,36 +6,7 @@
     "validateUpsert": true
   },
   "injectOptionsFromRemoteContext": true,
-  "properties": {
-     "Lastname": {
-      "type": "string"
-    },
-    "Firstname": {
-      "type": "string",
-      "required": "true"
-    },
-    "Gender": {
-      "type": "string"
-    },
-    "Socialtype": {
-      "type": "string"
-    },
-    "Location": {
-      "type": "string"
-    },
-    "Address": {
-      "type": [
-        "string"
-      ]
-    },
-    "Contact": {
-      "type": "string"
-    },
-    "Socialid": {
-      "type": "string",
-      "required": true
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {
     "fauxorders": {

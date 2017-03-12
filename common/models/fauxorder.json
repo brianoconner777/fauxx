@@ -5,38 +5,7 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "Restid": {
-      "type": "string"
-    },
-    "ordertotal": {
-      "type": "string"
-    },
-    "customernumber": {
-      "type": "string"
-    },
-    "customeraddress": {
-      "type": "string"
-    },
-    "customeremail": {
-      "type": "string"
-    },
-    "customername": {
-      "type": "string"
-    },
-    "ordertiming": {
-      "type": "string"
-    },
-    "orderinfo": {
-      "type": "object"
-    },
-    "takeaway": {
-      "type": "object"
-    },
-    "delivery": {
-      "type": "object"
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {
     "fauxuser": {
