@@ -1,0 +1,145 @@
+{
+  "name": "restaurant",
+  "base": "User",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "injectOptionsFromRemoteContext": true,
+  "properties": {
+    "restaurantId": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "Thumbnail": {
+      "type": "string"
+    },
+    "Restname": {
+      "type": "string",
+      "required": true
+    },
+    "Resttype": {
+      "type": "string",
+      "required": true
+    },
+    "Deliversin": {
+      "type": "string",
+      "required": true
+    },
+    "Minorder": {
+      "type": "string",
+      "required": true
+    },
+    "Deliveryfee": {
+      "type": "string",
+      "required": true
+    },
+    "Openinghours": {
+      "type": "string"
+    },
+    "Deliveryradius": {
+      "type": "string"
+    },
+    "Ordercapacity": {
+      "type": "string",
+      "required": true
+    },
+    "Adflag": {
+      "type": "boolean"
+    },
+    "Location": {
+      "type": "geopoint"
+    },
+    "Partybook": {
+      "type": "boolean"
+    },
+    "Paymentmethods": {
+      "type": [
+        "string"
+      ]
+    },
+    "Takeaway": {
+      "type": "boolean"
+    },
+    "Menu": {
+      "type": "object"
+    },
+    "Rating": {
+      "type": "string"
+    },
+    "freeDeliveryAmount":{
+      "type":"string",
+      "required": true
+    },
+    "RestaurantStatus":{
+      "type":"string",
+      "required": true
+    },
+    "orders": {
+      "type": [
+        "Fauxorder"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fauxorders": {
+      "type": "hasMany",
+      "model": "fauxorder",
+      "foreignKey": "restaurantId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "create"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "exists"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "updateAttributes"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "login"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__fauxorders"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__updateById__fauxorders"
+    }
+
+  ],
+  "methods": {}
+}

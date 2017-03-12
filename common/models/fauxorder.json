@@ -1,0 +1,55 @@
+{
+  "name": "fauxorder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Restid": {
+      "type": "string"
+    },
+    "ordertotal": {
+      "type": "string"
+    },
+    "customernumber": {
+      "type": "string"
+    },
+    "customeraddress": {
+      "type": "string"
+    },
+    "customeremail": {
+      "type": "string"
+    },
+    "customername": {
+      "type": "string"
+    },
+    "ordertiming": {
+      "type": "string"
+    },
+    "orderinfo": {
+      "type": "object"
+    },
+    "takeaway": {
+      "type": "object"
+    },
+    "delivery": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fauxuser": {
+      "type": "belongsTo",
+      "model": "fauxuser",
+      "foreignKey": "fauxuserId"
+    },
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "restaurant",
+      "foreignKey": "restaurantId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
