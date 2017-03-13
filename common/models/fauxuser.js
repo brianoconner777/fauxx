@@ -2,7 +2,7 @@ module.exports = function(Fauxuser) {
 
 	  // Fauxuser.disableRemoteMethodByName("create", true);
 	   // Fauxuser.disableRemoteMethodByName("find", false);
-  Fauxuser.disableRemoteMethodByName("findById", true);
+  // Fauxuser.disableRemoteMethodByName("findById", true);
   Fauxuser.disableRemoteMethodByName("update", true);
   Fauxuser.disableRemoteMethodByName("updateById", true);
   Fauxuser.disableRemoteMethodByName("patchById", true);
