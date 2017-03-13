@@ -145,7 +145,7 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW",
-      "property": "destroyById"
+      "property": "deleteById"
     }
 
 
