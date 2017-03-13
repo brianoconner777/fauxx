@@ -1,12 +1,16 @@
 {
   "name": "fauxorder",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-     "restName": {
+     "orderid": {
+      "type": "string",
+      "id":true
+    },
+    "restName": {
       "type": "string"
     },
     "ordertotal": {
